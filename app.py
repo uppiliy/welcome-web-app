@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     if request.method == "POST":
         name = request.form["name"]
-        version = "1.0.5"
+        version = "1.0.6"
         return render_template_string("<h1>Welcome to new Version: {{ version }}, {{ name }}</h1>", version=version, name=name)
     return '''
         <form method="post">
